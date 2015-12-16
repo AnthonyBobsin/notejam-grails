@@ -93,12 +93,12 @@ environments:
             logSql: true
     test:
         dataSource:
-            dbCreate: update
+            dbCreate: create
             url: "jdbc:mysql://localhost/notejam_test?useUnicode=yes&characterEncoding=UTF-8"
             logSql: true
     production:
         dataSource:
-            dbCreate: update
+            dbCreate: validate
             url: "jdbc:mysql://localhost/notejam_prod?useUnicode=yes&characterEncoding=UTF-8"
             properties:
                 jmxEnabled: true
